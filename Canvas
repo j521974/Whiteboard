@@ -1,0 +1,10 @@
+import java.awt.Color;
+
+import javax.swing.JPanel;
+
+public class Canvas extends JPanel {
+	public Canvas(){
+		setBackground(Color.white);
+		setSize(400,400);
+	}
+}
