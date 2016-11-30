@@ -1,0 +1,22 @@
+import java.awt.BorderLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Whiteboard extends JFrame{
+	public static JFrame frame;
+	public static JPanel panel;
+	public static Canvas canvas;
+	public static void main(String[]args){
+		Whiteboard whiteboard = new Whiteboard();
+	}
+	public Whiteboard(){
+		frame = new JFrame("Whiteboard");
+		canvas = new Canvas();
+		//install the canvas into center of the frame
+		frame.add(canvas,BorderLayout.CENTER);
+		
+		frame.pack();
+		frame.setVisible(true);
+		}
+}
